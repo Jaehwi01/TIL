@@ -1,0 +1,42 @@
+
+/* position 속성
+   1. static (기본값)   */
+.box_static{
+    
+    background-color: gray;
+    border: 2px solid red;
+    width:100px;
+    height: 100px;
+    
+
+}
+
+/* 2. absolute */
+.box_absolute {
+    position: absolute;
+    background-color: rgba(255,0,0,0.3);
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+    z-index:20;
+}
+
+/* 3. relative */
+.box_relative {
+    position: relative;
+    background: blue;
+    width: 100px;
+    height: 100px;
+}
+
+/* 4. fixed */
+.box_fixed {
+    position: fixed;
+    background-color : pink;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+
+}

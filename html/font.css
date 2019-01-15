@@ -1,0 +1,10 @@
+.font{
+    /* 1. font-size*/
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700; /* bold */
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 1.5; /* 줄간격 */
+    letter-spacing: 2px; /* 글자간격 */
+    text-align: center
+}
