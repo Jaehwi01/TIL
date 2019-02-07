@@ -41,6 +41,7 @@
   position: relative;
   margin-top:-400px;
   margin-left:100px;
+ 
   background-color: blue;
   /* relative를 사용해서 큰 사각형 죄측 상단 모서리에서 100px, 100px 띄우기 */
 

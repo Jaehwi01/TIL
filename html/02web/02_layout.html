@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>영화추천사이트</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="01_layout.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+</head>
+
+<body>
+    <section id="home">
+        <h2 class="header d-flex justify-content-center">
+            <div class="font1">당신에게 어울리는 영화를
+                <p>추천해드립니다.</p>
+            </div>
+        </h2>
+    </section>
+
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-grey">
+        <a class="navbar-brand" href="#">
+            <div class="font2">영화추천시스템</div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active font1" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link disabled font1" href="#">친구 평점 보러가기</a>
+                <a class="nav-item nav-link disabled font1" href="#">Log in</a>
+
+            </div>
+        </div>
+    </nav>
+    <!--영화리스트-->
+    <div class="container">
+        <h3 class="sub" style="text-align:center">영화목록</h3>
+    </div>
+
+    <div class="container">
+
+
+        <div class="row ">
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card" >
+                    <img src="imgs/말모이.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>말모이</strong><span class="badge badge-secondary">9.04</span></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+
+
+                        <li class="list-group-item">드라마 <br>
+                            개봉일: 2019.01.09
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=167699" target="_blank">영화정보보러가기</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card" >
+                    <img src="imgs/내안.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>내안의 그놈</strong><span class="badge badge-secondary">8.69</span></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item">판타지 <br>
+                            개봉일: 2019.01.09</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=164172" target="_blank">영화정보보러가기</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card" >
+                    <img src="imgs/글래스.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>글래스</strong><span class="badge badge-secondary">7.69</span></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item">드라마 <br>
+                            개봉일: 2019.01.17</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=163826" target="_blank">영화정보보러가기</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" >
+                <div class="card" >
+                    <img src="imgs/랄프.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>주먹왕 랄프</strong><span class="badge badge-secondary">8.76</span></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item">애니메이션 <br>
+                            개봉일: 2019.01.03</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=152632" target="_blank">영화정보보러가기</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card" >
+                    <img src="imgs/아쿠아.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>아쿠아맨</strong><span class="badge badge-secondary">8.39</span></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      
+                        <li class="list-group-item">액션 <br>
+                        개봉일: 2018.12.19</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=151153" target="_blank">영화정보보러가기</a>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card" >
+                    <img src="imgs/언더독.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>언더독</strong><span class="badge badge-secondary">9.49</span></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        
+                        <li class="list-group-item">애니메이션 <br></li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144318" target="_blank">영화정보보러가기</a>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer d-flex bd-highlight mb-3">
+        <div class="mr-auto p-2 bd-highlight">박재휘</div>
+        <a class="p-2 bd-highlight" href="#home" target="_self">To Home</a>
+
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

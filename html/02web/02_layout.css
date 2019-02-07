@@ -1,0 +1,53 @@
+.contaner {
+    background-color:gray;
+}
+.header {
+    background-image: url(imgs/실습사진.jpg);
+    background-size: 100% 100%;
+    height : 350px;
+    /* text-align: center; */
+    /* display: table-cell; */
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
+    
+    color : darkblue;
+}
+
+.footer {
+    position:sticky;
+
+    bottom:0;
+
+    padding-left:3rem;
+    padding-right:3rem;
+    width:100%;
+
+    height:50px;   
+
+    background:grey;
+}
+
+.font1{
+    font-size: 25px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+.font2{
+    font-family: 'Pacifico', cursive;
+}
+
+.sub{
+   color: grey;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+    border-bottom: 1px solid blue;
+    padding-bottom: 20px;
+}
+
+.card{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items:center;
+}
