@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="post in posts">
+                <h3>{{ post.id }}. {{ post.title }}</h3>
+                <span>userId: {{ post.userId }}</span>
+                <p>{{ post.body }}</p>
+            </li>
+        </ul>
+
+    </div>
+
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                posts: [],
+            },
+            methods:{
+                getPosts: function(){
+                    axios.get('https://jsonplaceholder.typicode.com/posts')
+                        .then((response)=>{
+                            return response.data  //리턴값은 다음 then의 파라미터로감
+                        })
+                        .then((posts)=>{
+
+
+                            // 1. forEach
+                            posts.forEach((post)=>{
+                                // post = { ... }
+                                // 그냥 반복만
+                            })
+
+                            // 2.map
+                            
+                                //posts = [{..},{..},{..},..]
+                            const newPosts = posts.map((post)=>{
+                                return post  //맵은 리턴되는 값으로 배열을 다시만듬.
+                            })
+                            console.log(newPosts)
+
+                            //3.filter
+                            // const numbers = [1,2,3,4,5]
+                            // const filteredPosts = numbers.filter((post)=>{
+                            //     return true
+                            // })
+                            // console.log(filteredNumbers)
+
+                            const filteredPosts = posts.filter((post)=>{
+                                return post.userId ===2
+                            })
+                            this.posts = posts  // === this.$data.posts
+                            
+                            
+                          
+                        })
+                        
+                }
+            },
+        })
+    </script>
+</body>
+</html>
